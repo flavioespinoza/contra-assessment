@@ -34,7 +34,7 @@ function wrapPromise(promise) {
   };
 }
 
-export function fetchUser(userId) {
+function fetchUser(userId) {
   console.log('fetch user ' + userId + '...');
   return new Promise((resolve) => {
     setTimeout(() => {
