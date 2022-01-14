@@ -1,7 +1,7 @@
 {
-  "name": "new",
-  "version": "1.0.0",
-  "description": "",
+  "name": "contra-assessment",
+  "version": "1.0.1",
+  "description": "Contra coding assessment",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
