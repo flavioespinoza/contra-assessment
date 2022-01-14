@@ -10,6 +10,10 @@ Contra coding assessment
  * 1) The useEffect hook should not be used with Suspense because Suspense starts the rendering before the data is returned.
  * 2) The fetchProfileData(id) call for data should be done in a child component of Suspense.
  * 3) The useState hook should not be used with Suspense because the fetchProfileData(id) should return a data object through a contract as is done in Relay.
+ * 
+ * OTHER ISSUES
+ * 4) The list of SuspensefulUserProfiles should be done with the map method so each resource is called in succession.
+ * 5) There is no default export
  * */
 
 import React, { Suspense } from 'react';
