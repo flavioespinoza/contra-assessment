@@ -18,6 +18,7 @@ Contra coding assessment
 
 import React, { Suspense } from 'react';
 import { fetchProfileData } from './simulatedRelayApi';
+import { v4 } from 'uuid';
 
 function SuspensefulUserProfile({ resource }) {
   return (
@@ -41,7 +42,7 @@ export default function UserProfileList() {
   const userIds = [1, 2, 3];
   const list = userIds.map((id) => {
     const resource = fetchProfileData(id);
-    return <SuspensefulUserProfile resource={resource} />;
+    return <SuspensefulUserProfile resource={resource} key={v4()} />;
   });
   return <>{list}</>;
 }
