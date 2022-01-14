@@ -12,7 +12,7 @@ Contra coding assessment
  * 3) The useState hook should not be used with Suspense because the fetchProfileData(id) should return a data object through a contract as is done in Relay.
  * 
  * OTHER ISSUES
- * 4) The list of SuspensefulUserProfiles should be done with the map method so each resource is called in succession.
+ * 4) The list of SuspensefulUserProfiles should be done with the map method.
  * 5) There is no default export
  * */
 
